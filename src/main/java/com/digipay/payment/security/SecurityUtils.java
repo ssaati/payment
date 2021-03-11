@@ -4,4 +4,8 @@ public class SecurityUtils {
     public static Long getCurrentUser() {
         return 0L;
     }
+
+    public static String getCurrentUserPhone() {
+        return "-";
+    }
 }

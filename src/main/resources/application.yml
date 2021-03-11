@@ -1,0 +1,10 @@
+payment1:
+  host: https://first-payment-provider/
+  uri: payments/transfer
+payment2:
+  host: https://second-payment-provider/
+  uri: cards/pay
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092

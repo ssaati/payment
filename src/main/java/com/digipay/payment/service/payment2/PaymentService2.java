@@ -2,13 +2,16 @@ package com.digipay.payment.service.payment2;
 
 import com.digipay.payment.rest.TransferDTO;
 import com.digipay.payment.service.PaymentService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+@Slf4j
 @Service
 public class PaymentService2 implements PaymentService {
     Payment2Client payment2Client;
     @Override
     public void transfer(TransferDTO transfer) {
+        log.debug("transfer using payment2");
         payment2Client.transfer(getTransfer(transfer));
     }
 
